@@ -97,7 +97,7 @@ nav .menu-btn,
 .home {
   height: 110vh;
   width: 100%;
-  background: url("alficopermana.github.io/Assets/HomeBackground.png") no-repeat;
+  background: url("/Assets/HomeBackground.png") no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
