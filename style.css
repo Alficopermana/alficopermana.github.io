@@ -1,0 +1,520 @@
+/* GOOGLE FONT */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* NAVIGATION MENU */
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 5px 20px;
+  font-family: "Ubuntu", sans-serif;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+nav.sticky {
+  padding: 1px 20px;
+  background: rgb(247, 178, 89);
+}
+
+nav .navbar {
+  margin: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+nav .navbar .logo {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 8px;
+}
+
+nav .navbar .logo a {
+  color: rgb(0, 0, 0);
+}
+
+nav.sticky .navbar .logo a {
+  color: rgb(255, 255, 255);
+}
+
+nav .navbar .menu {
+  display: flex;
+}
+
+nav .navbar .menu li {
+  margin: 20px 20px;
+  list-style: none;
+}
+.navbar .menu li a {
+  font-size: 19px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  transition: all 0.3s ease;
+}
+
+nav .navbar .menu li a:hover {
+  color: rgb(247, 178, 89);
+  font-size: 19px;
+  text-decoration: underline;
+}
+
+nav.sticky .navbar .menu li a:hover {
+  color: black;
+}
+
+nav.sticky .menu li a {
+  color: white;
+}
+
+/* SIDE MENU NAVIGATION */
+nav .menu-btn {
+  top: 15px;
+  right: 20px;
+  position: absolute;
+}
+
+nav .menu-btn,
+.navbar .cancel-btn {
+  color: black;
+  font-size: 20px;
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.navbar .cancel-btn:hover {
+  color: orange;
+}
+
+/* HOME SECTION */
+.home {
+  height: 110vh;
+  width: 100%;
+  background: url("../Portfolio/Assets/HomeBackground.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.home .home-content {
+  height: 100%;
+  width: 88%;
+  /* background: red;  buat cek dimensi */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home .home-content {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  line-height: 75px;
+}
+
+.home .home-content .text-one {
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 3px 2px 4px rgb(58, 57, 57);
+}
+
+.home .home-content .text-two {
+  font-size: 80px;
+  font-weight: bolder;
+  margin-left: -2px;
+  text-shadow: 3px 2px 4px rgb(58, 57, 57);
+}
+
+.home .home-content .text-three {
+  font-size: 50px;
+  font-weight: bolder;
+  margin-left: -2px;
+  margin-top: 5px;
+  text-shadow: 3px 2px 4px rgb(58, 57, 57);
+}
+
+.home .home-content .text-four {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: -4px;
+  text-shadow: 3px 2px 4px rgb(58, 57, 57);
+}
+
+.home .button button {
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 4px 10px;
+  background: rgb(0, 0, 0);
+  border: solid transparent;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+
+.home .button button:hover {
+  color: black;
+  background-color: whitesmoke;
+  border-color: black;
+}
+
+/* ABOUT SECTION */
+
+.about span {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 150px;
+}
+
+.about .about-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 100px;
+  margin-top: -13px;
+}
+
+.about .about-details article {
+  margin-left: 40px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 21px;
+  text-align: justify;
+}
+
+.about .about-details article .first {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.about .about-details aside img {
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.about .button a {
+  color: white;
+}
+
+.about .button button {
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 4px 10px;
+  background: rgb(0, 0, 0);
+  border: solid transparent;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+
+.about .button a:hover {
+  color: black;
+}
+
+.about .button button:hover {
+  background-color: whitesmoke;
+  border-color: black;
+}
+
+/* EXPERIENCE SECTION */
+
+.experience .content .title span {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 100px;
+  color: black;
+}
+
+.experience .experience-details .img img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CONTACT FOOTER */
+
+.contact {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.contact .content .logo {
+  font-family: "Poppins", sans-serif;
+  font-size: larger;
+  font-weight: bolder;
+  padding-top: 25px;
+}
+
+.contact .content .contact-details {
+  font-size: 25px;
+  word-spacing: 20px;
+  margin-top: 8px;
+}
+
+.contact .content .contact-details a {
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.contact .content .contact-details a:hover {
+  color: orange;
+}
+
+.contact .content span {
+  display: block;
+  margin-top: 30px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* RESPONSIVE MEDIA QUERY */
+
+/* HALF WINDOWS DESKTOP MEDIA */
+@media (max-width: 1269px) {
+  .about .content .about-details {
+    padding: 10px 35px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 890px) {
+  /* NAV SECTION */
+
+  nav .navbar .menu {
+    position: absolute;
+    right: -100%;
+    top: 0;
+    height: 100vh;
+    max-width: 250px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    /* background: linear-gradient(156deg, rgba(255, 197, 107, 1) 0%, rgba(255, 135, 45, 1) 70%); */
+    flex-direction: column;
+    align-items: center;
+    padding-top: 55px;
+    transition: all 0.5s ease;
+  }
+
+  .navbar .menu li a {
+    color: black;
+    /* text-shadow: 2px 2px 3px rgb(255, 155, 25); */
+  }
+
+  nav .navbar.active .menu {
+    right: 0;
+  }
+
+  .navbar .menu .li a {
+    display: block;
+    margin: 10px 0;
+    font-size: 100px;
+  }
+
+  nav.sticky .menu li a {
+    color: black;
+  }
+
+  nav .menu-btn,
+  .navbar .cancel-btn {
+    display: block;
+  }
+
+  /* HOME SECTION */
+
+  .home .home-content {
+    line-height: 60px;
+  }
+
+  .home .home-content .text-one {
+    font-size: 30px;
+    font-weight: medium;
+    text-shadow: 2px 2px 3px rgb(58, 57, 57);
+  }
+
+  .home .home-content .text-two {
+    font-size: 52px;
+    font-weight: bolder;
+    text-shadow: 3px 2px 4px rgb(58, 57, 57);
+  }
+
+  .home .home-content .text-three {
+    font-size: 38px;
+    font-weight: bolder;
+    text-shadow: 3px 2px 4px rgb(58, 57, 57);
+  }
+
+  .home .home-content .text-four {
+    font-size: 30px;
+    font-weight: medium;
+    text-shadow: 2px 2px 3px rgb(58, 57, 57);
+  }
+
+  .home .button button {
+    font-size: 18px;
+  }
+
+  /* ABOUT SECTION */
+
+  .about span {
+    font-size: 80px;
+  }
+
+  .about .about-details {
+    padding: 15px 70px;
+  }
+
+  .about .about-details article {
+    margin-left: 0px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .about .about-details br {
+    display: block;
+    margin-bottom: 0.3em;
+  }
+
+  .about .about-details article .first {
+    font-size: 18px;
+  }
+
+  .about .content .about-details aside img {
+    height: 230px;
+    width: 230px;
+    margin-top: -5px;
+    margin-bottom: 5px;
+  }
+
+  .about .button a {
+    color: white;
+  }
+
+  .about .button button {
+    font-size: 17px;
+    font-weight: 900;
+  }
+}
+/* under 570 */
+@media (max-width: 570px) {
+  /* HOME SECTION */
+  .home .home-content .text-two {
+    font-size: 40px;
+    margin-top: -20px;
+    margin-left: 1px;
+  }
+
+  /* EXPERIENCE SECTION */
+  .experience .content .title span {
+    font-size: 70px;
+  }
+
+  /* CONTACT SECTION */
+  .contact .content span {
+    font-size: 12px;
+  }
+}
+
+/* Iphone 13 PRO MAX */
+@media (max-width: 450px) {
+  /* HOME SECTION */
+  .home .home-content .text-one {
+    font-size: 30px;
+  }
+
+  .home .home-content .text-two {
+    font-size: 35px;
+  }
+
+  .home .home-content .text-three {
+    font-size: 33px;
+    margin-top: 5px;
+  }
+
+  .home .home-content .text-four {
+    font-size: 30px;
+    margin-top: -4px;
+  }
+
+  /* EXPERIENCE SECTION */
+  .experience .content .title span {
+    font-size: 70px;
+  }
+
+  /* CONTACT SECTION */
+  .contact .content .logo {
+    font-size: medium;
+    margin-bottom: 10px;
+  }
+  .contact .content .contact-details {
+    font-size: 25px;
+  }
+  .contact .content span {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 395px) {
+  /* HOME SECTION */
+
+  .home .home-content .text-one {
+    font-size: 25px;
+  }
+
+  .home .home-content .text-two {
+    font-size: 30px;
+    margin-top: -20px;
+    margin-left: 1px;
+  }
+
+  .home .home-content .text-three {
+    font-size: 28px;
+    margin-top: -15px;
+    margin-left: 1px;
+  }
+
+  .home .home-content .text-four {
+    font-size: 25px;
+    margin-top: -15px;
+  }
+  /* ABOUT SECTION */
+
+  .about .content .title span {
+    font-size: 60px;
+  }
+
+  /* EXPERIENCE SECTION */
+  .experience .content .title span {
+    font-size: 55px;
+  }
+
+  /* CONTACT SECTION */
+  .contact .content .logo {
+    font-size: smaller;
+    margin-bottom: 10px;
+  }
+  .contact .content .contact-details {
+    font-size: 23px;
+  }
+  .contact .content span {
+    font-size: 9px;
+  }
+}
